@@ -2,10 +2,9 @@ var express = require('express');
 var Mongolian = require('mongolian');
 var ejs = require('ejs');
 
-
 exports.express = express;
 
-exports.mongo = new Mongolian('localhost:27017/test');
+exports.mongo = new Mongolian('localhost:27017');
 
 exports.ejs = ejs;
 

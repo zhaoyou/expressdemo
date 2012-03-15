@@ -6,6 +6,6 @@ exports.list = function(req, res) {
      for(var i = 0; i < array.length; i++) {
        console.log(array[i]);
      }
-     res.render('list', {'layout': false});
+     res.render('list', {'layout': true, 'title': 'fuck you'});
   });
 };

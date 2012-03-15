@@ -1,0 +1,13 @@
+html body {
+  font-family: arial, sans-serif;
+  position: relative;
+  background: #FFF;
+  margin: 0 auto;
+  width: 960px;
+}
+
+footer {
+  text-align: center;
+  margin: 400px 0 20px 0;
+  font-size: 10px;
+}

@@ -10,6 +10,7 @@ app.use(config.express.static(__dirname + '/assets', {maxAge: 3600000 * 24 * 30}
 
 app.set('view engine', 'html');
 app.set('views',  __dirname + '/views');
+app.set('view options', {'layout': true});
 app.register('html', config.ejs);
 
 
@@ -18,5 +19,7 @@ app.configure(function(){
 });
 
 app.get('/list', dataProvider.list);
+app.get('/', dataProvider.list);
 
+console.log('server is start ' + config.hostname + ' listen ' + config.port);
 app.listen(config.port, config.hostname);

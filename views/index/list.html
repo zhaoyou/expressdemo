@@ -1,1 +1,12 @@
-<%- partial('things', things) %>
+<div class="list">
+  <div class="container">
+    <% for (var i in users) {%>
+    <div class="item">
+      <div class="name"><%=users[i].name%></div>  
+      <div class="age"><%=users[i].age%></div>
+      <div class="email"><%=users[i].email%></div>
+      <div class="address"><%=users[i].address%></div>
+    </div>
+    <%}%>
+  </div>
+</div>
